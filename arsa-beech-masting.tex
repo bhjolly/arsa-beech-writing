@@ -1,0 +1,452 @@
+%  LaTeX support: latex@mdpi.com In case you need support, please attach all files that are necessary for compiling as
+%  well as the log file, and specify the details of your LaTeX setup (which operating system and LaTeX version / tools
+%  you are using).
+
+%=================================================================
+\documentclass[remotesensing,article,submit,moreauthors,pdftex]{Definitions/mdpi} 
+
+%\usepackage{todonotes}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{gensymb}
+
+%\usepackage{trackchanges}
+%\addeditor{jollyb}
+
+
+% If you would like to post an early version of this manuscript as a preprint, you may use preprint as the journal and
+% change 'submit' to 'accept'. The document class line would be, e.g.,
+% \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to
+% arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this
+% change immediately prior to posting.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals: acoustics, actuators, addictions, admsci, aerospace, agriculture,
+% agriengineering, agronomy, algorithms, animals, antibiotics, antibodies, antioxidants, applsci, arts, asc, asi,
+% atmosphere, atoms, axioms, batteries, bdcc, behavsci , beverages, bioengineering, biology, biomedicines, biomimetics,
+% biomolecules, biosensors, brainsci , buildings, cancers, carbon , catalysts, cells, ceramics, challenges,
+% chemengineering, chemistry, chemosensors, children, cleantechnol, climate, clockssleep, cmd, coatings, colloids,
+% computation, computers, condensedmatter, cosmetics, cryptography, crystals, dairy, data, dentistry, designs ,
+% diagnostics, diseases, diversity, drones, econometrics, economies, education, ejihpe, electrochem, electronics,
+% energies, entropy, environments, epigenomes, est, fermentation, fibers, fire, fishes, fluids, foods, forecasting,
+% forests, fractalfract, futureinternet, futurephys, galaxies, games, gastrointestdisord, gels, genealogy, genes,
+% geohazards, geosciences, geriatrics, hazardousmatters, healthcare, heritage, highthroughput, horticulturae,
+% humanities, hydrology, ijerph, ijfs, ijgi, ijms, ijns, ijtpp, informatics, information, infrastructures, inorganics,
+% insects, instruments, inventions, iot, j, jcdd, jcm, jcp, jcs, jdb, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp,
+% jmse, jnt, jof, joitmc, jpm, jrfm, jsan, land, languages, laws, life, literature, logistics, lubricants, machines,
+% magnetochemistry, make, marinedrugs, materials, mathematics, mca, medicina, medicines, medsci, membranes, metabolites,
+% metals, microarrays, micromachines, microorganisms, minerals, modelling, molbank, molecules, mps, mti, nanomaterials,
+% ncrna, neuroglia, nitrogen, notspecified, nutrients, ohbm, optics, particles, pathogens, pharmaceuticals,
+% pharmaceutics, pharmacy, philosophies, photonics, physics, plants, plasma, polymers, polysaccharides, preprints ,
+% proceedings, processes, proteomes, psych, publications, quantumrep, quaternary, qubs, reactions, recycling, religions,
+% remotesensing, reports, resources, risks, robotics, safety, sci, scipharm, sensors, separations, sexes, signals,
+% sinusitis, smartcities, sna, societies, socsci, soilsystems, sports, standards, stats, surfaces, surgeries,
+% sustainability, symmetry, systems, technologies, test, toxics, toxins, tropicalmed, universe, urbansci, vaccines,
+% vehicles, vetsci, vibration, viruses, vision, water, wem, wevj
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: abstract, addendum, article, benchmark, book,
+% bookreview, briefreport, casereport, changes, comment, commentary, communication, conceptpaper, conferenceproceedings,
+% correction, conferencereport, expressionofconcern, extendedabstract, meetingreport, creative, datadescriptor,
+% discussion, editorial, essay, erratum, hypothesis, interestingimages, letter, meetingreport, newbookreceived,
+% obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, supfile, technicalnote,
+% viewpoint supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will
+% only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright
+% information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be
+% assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and
+% dvi2pdf.
+
+%=================================================================
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{xx}
+\issuenum{1}
+\articlenumber{5}
+\pubyear{2020}
+\copyrightyear{2020}
+%\externaleditor{Academic Editor: name}
+\history{Received: date; Accepted: date; Published: date}
+%\updates{yes} % If there is an update available, un-comment this line
+
+%% MDPI internal command: uncomment if new journal that already uses continuous page numbers \continuouspages{yes}
+
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org \pdfoutput=1
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, calc, indentfirst,
+% fancyhdr, graphicx, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec,
+% etoolbox, amsthm, hyphenat, natbib, hyperref, footmisc, geometry, caption, url, mdframed, tabto, soul, multirow,
+% microtype, tikz
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization,
+%Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption % For proofs,
+%please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Detection of southern beech heavy flowering using Sentinel-2 imagery}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{0000-0002-8984-3201} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{Ben Jolly $^{1}$\orcidA{}*, John R. Dymond $^{1}$, James D. Shepherd $^{1}$, Terry Greene$^{2}$, and Jan Schindler $^{1}$}
+
+% Authors, for metadata in PDF
+\AuthorNames{Ben Jolly, John Dymond, James Shepherd, Terry Greene, and Jan Schindler}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad Manaaki Whenua -- Landcare Research;\\
+$^{2}$ \quad Department of Conservation, New Zealand;}
+
+
+% Contact information of the corresponding author
+\corres{Correspondence: jollyb@landcareresearch.co.nz}
+
+% Current address and/or shared authorship \firstnote{Current address: Affiliation 3} \secondnote{These authors
+% contributed equally to this work.} The commands \thirdnote{} till \eighthnote{} are available for further notes
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{The southern beech (\emph{Fuscospora} and \emph{Lophozoniua}) forest in New Zealand periodically has 'mast' years where very large volumes
+of seed are produced. This excessive seed production results in a population explosion of rodents and mustelids that
+puts pressure on native birds. To protect the birds, extra pest control, costing in the order of 20 million dollars, is
+required in masting areas. To plan pest control and keep it cost-effective, it would be helpful to have a map
+of the masting areas. In this paper, we develop a remote sensing method for making a national map of beech flowering. It
+uses a temporal sequence of Sentinel-2 satellite imagery to determine areas where a yellow index based on red and green
+reflectance (red-green)/(red + green) is higher than normal in spring. The method was used to produce national maps of heavy beech flowering for the years 2017 through to 2021. In 2018, which was a major beech masting year, of the 4.1 million ha of beech forest in New Zealand, 27.6\%  was observed to flower heavily. The accuracy of the "heavy flowering detected" class was 90.4\% and the accuracy of the "heavy flowering not detected" class was 91\%. The method
+is fully automated and can be used to predict excessive seedfall, for all New Zealand, several months
+in advance of when pest control is required.}
+
+% Keywords
+\keyword{southern beech; masting; beech flowering; seedfall; Fuscospora; Sentinel-2}
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable \PACS{J0101} \MSC{} \JEL{}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+New Zealand southern beech (genus \emph{Fuscospora} and \emph{Lophozoniua}, formerly \emph{Nothofagus} \citep{Heenan2013}) forest dominates over 2 million hectares (ha) of New Zealand
+forest, and features in almost 2 million ha more \citep{Shepherd2005}. It comprises five species: mountain beech (\emph{Fuscospora cliffortioides}), red
+beech (\emph{Fuscospora fusca}), silver beech (\emph{Lophozonia menziesii}), black beech (\emph{Fuscospora solandri}), and hard beech (\emph{Fuscospora truncata}).
+These trees reproduce almost yearly, with periodic highly productive seasons known as 'mast' years that produce
+large volumes of seed \citep{Wardle1984}. Seed is a significant food source for a number of birds and mammals. Rodents and
+mustelids are of particular concern \citep{Elliott2016} because during mast years the rodent population increases
+significantly \citep{Elliott2016,Ruscoe2010}, providing an abundant food source for mustelids (esp. stoats -- \emph{Mustela erminea})
+\citep{King2011}. All rodent and mustelid species are non-native and prey on New Zealand native bird species, so increases in their populations
+are concerning. This compounds when the seed begins to run out and alternative food sources are sought as populations
+become unsustainable. Population control of introduced predators is essential for preserving native and endemic species of birds in New Zealand, especially in beech mast years \citep{King2011}.
+
+The New Zealand Department of Conservation (DOC) is responsible for managing forests on public land, as well as preserving native
+species and coordinating pest control. They need to know when and where significant mast events occur for targeting pest
+control efforts to limit the explosion of predator populations \citep{Elliott2016}. A number of approaches are currently
+used for targeting: (i) modelling, (ii) field observations, and (iii) sampling of tree branches. (i) The 'delta-T' ($\Delta{T}$) model
+\citep{Kelly2013} uses the difference in mean temperature from the previous two summers ($T_{n-1} - T_{n-2}$) to predict
+likely seedfall for the following autumn. This has been used to predict high seed yields at national scale.
+However, it relies on temperature data, which are currently only available on a modelled 5 x 5 km grid, so will miss
+smaller-scale micro-climate effects. While historical temperature is an important factor in synchronizing mast events \citep{Kelly2013}, other factors such as nutrient availability also play a role \citep{Allen2014}. New research suggests that rising temperatures due to climate change may change the masting cycle of beech trees \citep{Bogdziewicz2020,Allen2014}, increasing the spatial and temporal complexity of masting patterns \citep{Allen2014} and potentially desynchronizing flowering/seeding, effectively reducing the impact, and predictive power, of temperature on the timing of the reproductive cycle \citep{Bogdziewicz2021}. (ii) Field staff from DOC are well-placed to provide observations of beech flowering in
+certain areas as part of their normal duties. However, there are large areas of forest that remain unobserved and
+spatial extent is often difficult to define, especially at a regional or national scale. (iii) Finally, extensive sampling
+campaigns are conducted during years where a heavy mast is expected using helicopters to clip upper branches from trees
+so seeds can be counted. This task is expensive, labour-intensive, and dangerous. 
+
+Remote sensing has proved to be an effective tool for monitoring vegetation phenology, particularly when a rich time series of imagery is available \citep{Zeng2020}. With sensors like Sentinel-2 it is possible to map phenology over millions of hectares to create national maps at detailed scale (10m pixels). Phenological characteristics are usually derived by first fitting a curve to the time series of remote sensing data, then using either threshold-based methods, moving averages, inflection point, or time of maximum increase \citep{Noumonvi2021}. Seasonality is usually assumed \citep{Noumonvi2021}. Vegetation indices such as the normalised difference vegetation index (NDVI), the enhanced vegetation index (EVI), and the normalised difference yellow index (NDYI), are often used to differentiate flowers and to summarise data as one variable for analysis \citep{Dixon2021,Noumonvi2021}.
+
+In this study, we investigate satellite remote sensing for identifying areas of significant southern beech flowering in New Zealand. We use imagery from the European Space
+Agency (ESA) Sentinel-2 'a' and 'b' satellites to obtain a high rate of repeat passes to maximise the chances
+of multiple cloud-free observations, and to produce national coverage at detailed scale. As significant flowering is an unusual phenological event, we identify departures of NDYI from a normal annual pattern to identify heavy beech flowering. Using this method, we produce national maps of heavy beech flowering for 5 different years, 2017 through 2021. We assess the accuracy of the method by comparison with a human operator at 1000 randomly selected sites. A national map of heavy beech flowering can be produced at the end of every spring to assist DOC in identifying
+potential masting 'hot-spots' and thus aid planning of pest control operations. 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Materials and Methods}
+
+\subsection{Data}
+The Sentinel-2 satellite mission consists of two satellites - Sentinel-2a and -2b - in sun-synchronous orbits
+repeating every 10 days. These orbits are $180^\circ$ out-of-phase with each other, which produces a 5-day revisit period.
+The swath width of each pass is 290 km, with five 'passes' required to cover the mainland of New Zealand, each on a different day.
+Overlap between passes means that some areas of
+the country have a higher revisit rate. Each Sentinel-2 satellite is equipped with a multi-spectral imaging sensor
+capturing wavelengths from ultraviolet to short-wave infrared. 
+
+This study uses the Copernicus Sentinel-2 Level-1C calibrated top of atmosphere (TOA) reflectance at the sensor as downloaded from the ESA
+archives, with edges masked to remove pixels that do not contain data for every band. It covers all available Sentinel-2
+data over New Zealand from 2016-09-01 to 2021-12-31, with images every 10 days before Sentinel-2b came online around
+2017-07-08 and images every 5 days thereafter. Analysis was restricted to areas of indigenous beech forest assumed as defined by EcoSat Forests \citep{Shepherd2005,Dymond2004,ecosatnorth,ecosatsouth}. A 'mega-mast' occurred during
+spring 2018/autumn 2019 \citep{DOC2019flowering, DOC2019}. Other years showed some small flowering events or none at all. Cloudy pixels were excluded from
+the temporal sequence using the methodology outlined in \citep{Shepherd2020}.
+
+No suitable ground data on beech flowering exist to provide a reference dataset for accuracy assessment, however seed counts from a long-running monitoring programme using permanent seed traps \citep{Elliott2016} were available and supplied by DOC.
+
+\subsection{Methods}
+Southern beech flowers produce a reddening of the forest canopy that is easily visible from the ground, especially during a significant
+mast season. At the 10 m pixel nominal spatial
+resolution of Sentinel-2, the reddening of the canopy appears to the human eye as a subtle yellowing in the 'natural color' (RGB) image as the red flowers
+increase the red component of a pixel but not to the point of dominating the green. Higher-wavelength image bands (and associated indices) were investigated but the only other band that showed a noticeable response was Band 5 (red edge), and this was also associated with 'flushes' of new foliage in late spring. In order to detect the yellowing associated with southern beech flowering, we apply two
+approaches: the calculation of a normalised difference yellowing index (NDYI) to describe the red/green band relationship; and the modelling of this index over the
+time-series of the image archive to detect variations from the expected (non-flowering) state.
+
+The effect is subtle enough that the technique required is very sensitive to cloud and shadow contamination. Additional to the cloud masking performed above, 'invalid' pixels from the cloud mask (cloud/shadow/snow/water) were buffered by 30 pixels (300 m) and patches of 'valid' pixels smaller than 100 ha were re-classified 'invalid'. Extra spectral filtering was then used to mask remaining pixels too bright or dark to be forest (or useful): $\text{B}4_{red} < 650\text{, B}3_{green} < 900\text{, B}2_{blue} < 1000\text{, B}8_{NIR} > 1000\text{, B}4_{red} - \text{B}5_{red edge} < -1500$. The result was then further buffered by 3 pixels.
+
+The NDYI is similar to the well-known normalised difference vegetation index (NDVI)\citep{Rouse1974}, using the 'red' (Band 4 ~665 +/- 15 nm) and
+'green' (Band 3 ~560 +/- 18 nm) Sentinel-2 bands instead of 'near-infrared' and 'red'. It is also very similar to the green-red vegetation index (GRVI)\citep{Tucker1979,Motohka2010}, with the order of the bands merely reversed:
+
+\begin{equation}
+    NDYI = \frac{(\text{B4}_{red} - \text{B3}_{green})}{(\text{B4}_{red} + \text{B3}_{green})}
+\end{equation}
+
+The NDYI is calculated using the Level-1C TOA reflectance product re-projected to the New Zealand Transverse Mercator
+(NZTM) coordinate reference system (EPSG:2193) and with invalid pixels masked. As the NDYI represents the ratio of
+red-green, and both are affected similarly by transient atmospheric conditions, it will be negative over most areas of
+forest most of the time (i.e. when a pixel is 'green'), increasing to near or slightly above 0 during heavy flowering events. NDYI was calculated for cloud-free pixels mapped as beech in EcoSat Forests \citep{Shepherd2005,Dymond2004,ecosatnorth,ecosatsouth}.
+
+Substantial annual variation is present in TOA reflectance observations over forest due to climatic conditions,
+vegetation phenology, and sun angle. The NDYI signal visually observed during flowering is subtle enough in the context
+of a year of data that setting simple thresholds is inadequate to produce a reliable result. Additionally, flowering can
+occur at different times during the spring season, depending on latitude and altitude \citep{Wardle1984,Allen2014}. The temporal sequence of NDYI for a pixel in the Hawdon
+Valley (South Island, New Zealand) is shown in Figure \ref{fig:sine} as an example. Part of the TMASK methodology developed for cloud detection in
+Landsat 8 imagery \citep{Zhu2014} was adapted to model the yellowing index for each pixel in areas of suspected beech
+forest (orange line in Fig. \ref{fig:sine}). The model uses robust regression to calculate coefficients for sine and
+cosine terms for intra- ($a_1$, $a_2$) and inter-annual ($a_3$, $a_4$) variability as well as a constant term ($c$)
+where $x$ is the number of days since the start of the temporal sequence, $T_{yr}$ is the number of days per year, and $T_{all}$ is the number of days in the sequence:
+
+\begin{equation}
+    \text{NDYI}_{mod} = c + a_1sin(2\pi\frac{x}{T_{yr}}) + a_2cos(2\pi\frac{x}{T_{yr}}) + a_3sin(2\pi\frac{x}{T_{all}}) + a_4cos(2\pi\frac{x}{T_{all}})
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/figure1_ndyi_coeffs-windscreen_possibility_upscale.eps}
+    \caption{Observed NDYI values for an example pixel in the Hawdon Valley (blue) with modelled values (orange)
+    superimposed. Grey areas indicate Spring seasons where NDYI is expected to peak during a mast.}
+    \label{fig:sine}
+\end{figure}  
+
+Observed NDYI for each pixel/date were then subtracted from the modelled value to produce $\Delta\text{NDYI}$ and the
+maximum value was found for each flowering season (1st September to 10th December):
+
+\begin{equation}
+    \Delta\text{NDYI} = \text{NDYI} - \text{NDYI}_{mod}
+\end{equation}
+
+Finally, $\Delta\text{NDYI}$ values were converted to a map of 'heavy flowering detected' vs 'heavy flowering not detected' by following a method similar to \citet{Shepherd2007}. First, a high $\Delta\text{NDYI}$ threshold of 0.08 was chosen by assessing $\Delta\text{NDYI}$ against the seed trap data during the 2018 'mega mast'. This threshold was used to create 'seed' areas which were grown outwards by progressively lowering it to 0.04. The resulting 'flowering' pixels were then buffered by 2 pixels followed by a 5 x 5 majority filter then eroded by 2 pixels. 'Heavy flowering not detected' patches smaller than 1 ha were removed by re-coding as 'heavy flowering detected' or 'no data' (majority of surrounding pixels), then 'heavy flowering detected' patches smaller than 1 ha were re-coded 'heavy flowering not detected'. 
+
+As no ground truth data on flowering exist, the resulting national-scale map for the 2018 mast year was accuracy-assessed by a human operator. At 1000 randomly selected sites, 500 in "heavy flowering detected" and 500 in "heavy flowering not detected", the operator determined whether heavy flowering was observed in 2018 cloud-free spring imagery in comparison with a median spring image (excluding 2018).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+Spring (September/October/November) of 2017 was a light flowering season for southern beech in New Zealand. This was
+followed by a 'mega mast' in 2018 with heavy flowering observed from the ground during spring, and corresponding heavy
+seedfall the following autumn. Maps of maximum spring $\Delta\text{NDYI}$ were produced for each year of data, with results
+for the 2018 season shown in Figure \ref{fig:ndyinz}. Spatial patterns correspond with anecdotal reports from
+DOC staff based at field offices around New Zealand. There is heavy flowering throughout most of the north-western corner of the South Island, and
+sporadic heavy flowering in eastern Fiordland. The inset of Figure \ref{fig:ndyinz} highlights the level of detail available and shows heavy flowering on the lower slopes of the Hawdon and Poulter Valleys, dissipating as altitude increases up the valley walls (black areas are not beech forest - either alpine or riverbed in this location).
+
+Figure \ref{fig:mapts} shows the maps of heavy beech flowering as detected by the method for years 2017 through 2021. In spring 2018, much heavy beech flowering was detected in the north-west of the South Island, synonymous with a 'mega mast' in that region. In the North Island and the south-west of the South Island, some pockets of heavy flowering were detected. The following year in spring 2019 the flowering was much reduced in the north-west of the South Island, but in the North Island much heavy flowering was detected, synonymous with another "mega mast". The south-west of the South Island had pockets of heavy flowering, much the same as in 2018. In years 2020 and 2021, minimal beech flowering was detected in most areas. 
+
+In the 2018 map, heavy flowering was detected in 27.6\% of the 4.1 million ha of beech forest in New Zealand. Heavy flowering was not detected in 51.2\% of the beech forest. In the remainder of the beech forest there was no cloud-free imagery in spring to make a decision. We assessed the accuracy of the 2018 map for heavy beech flowering. In each of the two classes, "heavy flowering detected" and "heavy flowering not detected", we generated 500 random locations at which we compared reference data with map data. Reference data was determined from visual interpretation of all the cloud-free spring imagery for the year. The "heavy flowering detected" class was 90.4\% accurate and the "heavy flowering not detected" class was 91.0\% accurate (Table \ref{tab:confusion} shows the confusion matrix).  
+
+\begin{table}[H] 
+\renewcommand{\arraystretch}{2.1}
+\caption{Confusion matrix of 2018 heavy flowering map. Proportions are estimated from a random sample of 500 locations in "Heavy flowering detected" class and a random sample of 500 locations in "Heavy flowering not detected" class.}
+\begin{center}
+\begin{tabular}{|l|l|c|c|c|c|c|}
+\cline{3-5}
+\multicolumn{2}{c|}{}& \multicolumn{3}{c|}{Reference classes} & \multicolumn{2}{c}{}\\
+\cline{3-7}
+\multicolumn{2}{c|}{}& \multicolumn{1}{p{1.3cm}|}{Heavy flowering detected} & \multicolumn{1}{p{1.3cm}|}{Heavy flowering not detected} & \multicolumn{1}{p{1.3cm}|}{No cloud-free imagery} & \multicolumn{1}{p{1.5cm}|}{Proportion of mapped class} & \multicolumn{1}{p{1.3cm}|}{Map Accuracy}\\
+\cline{1-7}
+\multirow{3}{*}{\rotatebox{90}{Mapped classes}} & Heavy flowering detected & $0.250$ & $0.026$ & $0.000$ & $0.276$ & $0.904$\\
+\cline{2-7}
+& Heavy flowering not detected & $0.046$ & $0.466$ & $0.000$ & $0.512$ & $0.910$\\
+\cline{2-7}
+& No cloud-free imagery & $0.000$ & $0.000$ & $1.000$ & $0.212$ & $1.000$\\
+\cline{1-7}
+\end{tabular}
+\end{center}
+\label{tab:confusion}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{images/figure2_2018_dndyi.pdf}
+    \caption{Maximum $\Delta\text{NDYI}$ (from modelled) for spring 2018 in areas of known southern beech
+    forest in New Zealand. Green denotes areas of low (< 200) maximum $\Delta\text{NDYI}$, while red is high (> 0.08) and indicates heavy beech flowering. Inset shows Hawdon and Poulter Valleys near Arthur's Pass (1:250,000 at 42.95\degree{}S, 171.82\degree{}E, see white box).}
+    \label{fig:ndyinz}
+\end{figure}  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{images/figure3_timeseries.pdf}
+    \caption{Maps of heavy beech flowering during spring time for four years of Sentinel-2 imagery (2017 - 2021 inclusive). Classes are "heavy flowering detected" (red), "heavy flowering not detected" (green), and "no cloud-free imagery" (grey).}
+    \label{fig:mapts}
+\end{figure}  
+
+\begin{figure}
+    \centering
+    % \includegraphics[width=\textwidth]{images/seeds_ndyi_201819.eps}
+    \includegraphics[width=\textwidth]{images/figure4_scatter_ndyi_seed_2018-2019.eps}
+    \caption{Relationship between maximum $\Delta\text{NDYI}$ (spring 2018) and number of seeds collected from seed traps in the permanent trap network (autumn/winter 2019) for the 2018/19 masting season. Locations are filtered to exclude those with fewer than eight valid satellite observations.}
+    \label{fig:trayscatter1819}
+\end{figure}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Discussion}
+
+We developed a method that produces a national map of heavy beech flowering from a temporal sequence of Copernicus Sentinel-2
+imagery (Fig. \ref{fig:mapts}). The method detects elevated values of a yellow index, NDYI, above those normally expected in spring -- a
+$\Delta\text{NDYI}$ value greater than 0.08 indicates heavy flowering. The elevated yellow index is caused by the
+production of red flowers obscuring green leaves. The national map of beech flowering may be produced at the end of
+spring, several months before the subsequent masting event actually occurs and seed drops to the ground. This gives the
+national agency in charge of pest control, DOC, several months to analyse the spatial distribution and intensity of the flowering in order to
+plan the extra pest control required. In the 2018 spring, a nationwide beech masting event was detected and mapped by
+this method. A manual accuracy assessment determined the method to be 90\% accurate against a human operator with the same imagery. The spatial distribution of beech flowering as mapped by the method was also consistent with anecdotal
+observations from DOC field staff.
+
+The national map of beech flowering can be used to provide extra detail to augment the existing $\Delta{T}$ model, as it
+provides a higher spatial resolution of 10 m as opposed to 5 km. Observations of flowering also help mitigate sources of
+uncertainty in the previous summer $\Delta{T}$ that could limit seed production, such as carbon availability and soil
+moisture conditions \citep{Uscoe2005}. The observations should also mitigate the impact of microclimatic effects not
+captured in the modelled 5 km temperature grid. In addition to the planning of extra pest control at appropriate scales,
+the national map of beech flowering can be used for targeting observation/measurement campaigns investigating
+seedfall.  
+
+% Not all heavy beech flowering in spring will result in heavy seedfall in the following autumn. Heavy frost or very wet weather can interfere with seed production \citep{Wardle1984}.  Figure \ref{fig:trayscatter1819} shows how well the maximum $\Delta\text{NDYI}$ compares with seed counts in trays located on the floor of beech forest (seed traps are spread throughout beech forests in New Zealand as part of long-running monitoring programme conducted by DOC \citep{Elliott2016}). The analysis was limited to seed traps where the number of cloud-free $\Delta\text{NDYI}$ observations for spring season was greater than or equal to
+% eight to ensure that the the maximum $\Delta\text{NDYI}$ was accurate. There is noise in the data, primarily due to a mismatch in scales of the data, nevertheless high seed counts correspond with high maximum $\Delta\text{NDYI}$. Not all high maximum $\Delta\text{NDYI}$ values result in high seed counts, as expected, so we recommend the national map be regarded as a map of potentially high seedfall, to be confirmed later with additional information such as selected field observations.
+
+Not all heavy beech flowering in spring will result in heavy seedfall in the following autumn. Heavy frost or very wet weather can interfere with seed production \citep{Wardle1984}.  Figure \ref{fig:trayscatter1819} shows how well the maximum $\Delta\text{NDYI}$ compares with seed counts in trays located on the floor of beech forest (seed traps are spread throughout beech forests in New Zealand as part of long-running monitoring programme conducted by DOC \citep{Elliott2016}). Data were restricted to locations with at least eight cloud-free observations to obtain a fair representation over the majority of the spring season. There is noise in the data, nevertheless high seed counts generally correspond with high maximum $\Delta\text{NDYI}$. Reasons for mismatches include: cloud coverage obscuring the flowering event (low $\Delta\text{NDYI}$ vs high seed count); exact trap location relative to flowering trees as well as wind direction during seed fall (high $\Delta\text{NDYI}$ vs low seed count); different beech species (different relationship between $\Delta\text{NDYI}$ and seed count); climate, adverse weather events, and nutrient availability (lower seed count vs higher $\Delta\text{NDYI}$); and inaccuracies in the method (addressed in accuracy assessment). A similar comparison with 2017 data (not shown) showed no relationship, seed counts were all 0 (or close to) and $\Delta\text{NDYI}$ values were very low. We recommend the national map of flowering/not flowering be regarded as a map of potentially high seedfall, to be confirmed later with additional information such as selected field observations. 
+
+In some areas there is a paucity of satellite observations
+-- even with 5 daily or better repeats, many mountainous areas of the country only receive a handful of cloud-free
+observations at irregular intervals for an entire spring. The effect of this is that some areas of masting are missed
+as the observations may not occur at times when the flowers are visible. A way to address this
+shortcoming is to add more data sources. As the technique developed in this study relies only on red, green, blue, and NIR (for quality control)
+wavelengths, it should be possible to include data from commercial satellite constellations with higher revisit rates
+but lower spectral range or resolution, such as the Planet\footnote{https://www.planet.com/} 'Dove' constellation. Targeted aerial imaging campaigns could also provide valuable information in areas of known data paucity, particularly if they were informed by observations from field staff. This study has shown the resolution requirement is low by aerial imaging standards which would allow higher flight altitudes and larger image footprints, substantially reducing cost. Adding freely available Landsat-8 data could also increase the
+probability of obtaining a valid observation at a critical time. 
+
+Temporal analysis of Sentinel-2 satellite imagery has proved successful at detecting heavy flowering in New Zealand
+beech forests. To achieve this, cloud clearing had to be accurate
+(because the yellow index is sensitive to missed cloud) and automated (because many images are required). Automation of the could clearing \citep{Shepherd2020} and other processing means that
+beech flowering maps can be produced in a timely and cost-effective way. In future, we plan to produce a national map of heavy beech flowering at the end of each spring. This would give several months for analysis to
+plan the extra pest control required in autumn, improving the targeting of pest control
+in masting areas, and leading to better outcomes for native birds.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+
+This study used Sentinel-2 top-of-atmosphere (TOA) imagery to detect and map atypical yellowing associated with heavy flowering
+of southern beech (\emph{Fuscospora} and \emph{Lophozoniua}) in New Zealand over ~4.1 million ha at an unprecedented 10 m spatial resolution.
+This was achieved by modelling a normalised difference yellowing index (NDYI) over 5 years of observations and
+investigating deviations from expected values during spring months (September--November). A 'threshold' $\Delta\text{NDYI}$
+value of 0.08 may be used to identify areas of heavy flowering, with connected areas of $\Delta\text{NDYI}$ > 0.04 also likely flowering.  The
+method has been automated and can be run for all of New Zealand in less than a day on a cluster of approximately 1000 CPU cores. Using Sentinel-2 imagery, the method typically provides information on heavy flowering for 80\% of the beech forests in New Zealand with a high accuracy of over 90\%, 
+producing helpful information for national-scale pest control efforts.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional \supplementary{The following are available online at \linksupplementary{s1}, Figure S1: title, Table S1:
+%title, Video S1: title.}
+
+% Only for the journal Methods and Protocols: If you wish to submit a video article, please do so with any other
+% supplementary material. \supplementary{The following are available at \linksupplementary{s1}, Figure S1: title, Table
+% S1: title, Video S1: title. A supporting video article is available at doi: link.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{Conceptualization, Ben Jolly, John Dymond, Terry Greene, and Jan Schindler; Data curation, Ben Jolly, James Shepherd and Jan Schindler; Formal analysis, Ben Jolly; Funding acquisition, John Dymond; Investigation, Ben Jolly, John Dymond, and Terry Greene; Methodology, Ben Jolly, John Dymond, James Shepherd, and Terry Greene; Project administration, John Dymond; Resources, John Dymond; Software, Ben Jolly, James Shepherd and Jan Schindler; Supervision, John Dymond; Visualization, Ben Jolly; Writing – original draft, Ben Jolly; Writing – review \& editing, John Dymond, James Shepherd, and Terry Greene.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\funding{This research was funded by the New Zealand Ministry of Business, Innovation and Employment (MBIE) Endeavour Fund under the Advanced Remote Sensing of Aotearoa research programme (C09X1709).}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\acknowledgments{The authors would like to thank the New Zealand Department of Conservation (DOC) for providing advice and validation data.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\conflictsofinterest{The authors declare no conflict of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript, or in the decision to publish the results.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+\abbreviations{The following abbreviations are used in this manuscript:\\
+
+\noindent 
+\begin{tabular}{@{}ll} 
+DOC     & Department of Conservation \\
+ESA     & European Space Agency \\
+EVI     & Enhanced vegetation index \\
+GRVI    & Green-red vegetation index \\
+NDVI    & Normalised difference vegetation index \\
+NDYI    & Normalised difference yellowing index \\
+NZTM    & New Zealand Transverse Mercator \\
+TOA     & Top of atmosphere\\
+
+
+
+\end{tabular}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list
+% here. 
+
+%=====================================
+% References, variant A: internal bibliography
+%=====================================
+% \reftitle{References} \begin{thebibliography}{999} % Reference 1 \bibitem[Author1(year)]{ref-journal} Author1, T. The
+% title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149. % Reference 2
+% \bibitem[Author2(year)]{ref-book} Author2, L. The title of the cited contribution. In {\em The Book Title}; Editor1,
+% F., Editor2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58. \end{thebibliography}
+
+% The following MDPI journals use author-date citation: Arts, Econometrics, Economies, Genealogy, Humanities, IJFS,
+% JRFM, Laws, Religions, Risks, Social Sciences. For those journals, please follow the formatting guidelines on
+% http://www.mdpi.com/authors/references To cite two works by the same author: \citeauthor{ref-journal-1a}
+% (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975) To cite two works by the
+% same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328;
+% \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%=====================================
+% References, variant B: external bibliography
+%=====================================
+\externalbibliography{yes}
+\bibliography{library.bib}
+
+\end{document}
